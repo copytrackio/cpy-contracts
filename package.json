@@ -1,0 +1,34 @@
+{
+  "name": "ico-contract",
+  "version": "1.0.0",
+  "description": "",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "ethereumjs-abi": "^0.6.4",
+    "zeppelin-solidity": "^1.4.0"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "chai-as-promised": "^7.1.1",
+    "chai-bignumber": "^2.0.2",
+    "coveralls": "^3.0.0",
+    "sol-merger": "^0.1.2",
+    "solidity-coverage": "^0.4.3",
+    "truffle": "^4.0.1",
+    "truffle-hdwallet-provider": "0.0.3"
+  },
+  "scripts": {
+    "test": "mocha",
+    "build-contracts": "sol-merger './contracts/*.sol' ./build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/pixlegal/ico-contract.git"
+  },
+  "author": "ecocode GmbH",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/pixlegal/ico-contract#readme"
+}
