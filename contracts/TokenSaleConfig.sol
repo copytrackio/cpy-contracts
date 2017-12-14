@@ -4,8 +4,8 @@ pragma solidity ^0.4.18;
 contract TokenSaleConfig  {
     uint public constant EXA = 10 ** 18;
 
-    uint256 public constant PUBLIC_START_TIME         = 1516233600; //Thu, 18 Jan 2018 00:00:00 +0000
-    uint256 public constant END_TIME                  = 1518912000; //Sun, 18 Feb 2018 00:00:00 +0000
+    uint256 public constant PUBLIC_START_TIME         = 1515542400; //Wed, 10 Jan 2018 00:00:00 +0000
+    uint256 public constant END_TIME                  = 1518220800; //Sat, 10 Feb 2018 00:00:00 +0000
     uint256 public constant CONTRIBUTION_MIN          = 0.1 ether;
     uint256 public constant CONTRIBUTION_MAX          = 2500.0 ether;
 
