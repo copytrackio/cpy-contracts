@@ -322,15 +322,16 @@ contract TokenSale is TokenSaleConfig, Ownable {
     }
 
     // register an early bird investment
-    function addEarlyBird(address _address, uint256 amount)
+    function addEarlyBird(address _address, uint256 weiAmount)
         onlyOwner
+        withinContributionLimits(_address, weiAmount)
         external
     {
         // only allowed as long as we dont have a connected token
         require(tokenContract == address(0));
 
         earlyBirds.push(_address);
-        earlyBirdInvestments[_address] = amount;
+        earlyBirdInvestments[_address] = weiAmount;
 
         // auto whitelist early bird;
         whitelist[_address] = true;

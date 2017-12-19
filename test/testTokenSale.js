@@ -411,7 +411,7 @@ contract('TokenSale', (accounts) => {
 
         it('should also finalize the token', async () => {
             const endTime = await tokenSaleInstance.END_TIME();
-            tokenSaleInstance.changeTime(endTime.plus(5));
+            await tokenSaleInstance.changeTime(endTime.plus(5));
 
             await tokenSaleInstance.finalize();
 

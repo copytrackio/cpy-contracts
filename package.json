@@ -21,7 +21,7 @@
     "truffle-hdwallet-provider": "0.0.3"
   },
   "scripts": {
-    "test": "mocha",
+    "test": "./node_modules/.bin/truffle test --network development",
     "build-contracts": "sol-merger './contracts/*.sol' ./build"
   },
   "repository": {
